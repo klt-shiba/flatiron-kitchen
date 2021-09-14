@@ -1,0 +1,5 @@
+<h1> Recipe: </h1>
+<%= render partial: 'recipe', locals: {recipe: @recipe, ingredients: @recipe.ingredients}  %>
+
+<a><%= link_to "Back to Index", recipes_path%></a>
+<a><%= link_to "Edit", edit_recipe_path%></a>
